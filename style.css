@@ -6,12 +6,12 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 13px;
-  width:1600px;
+  width: 1600px;
 }
 
-.span{
-   width:1000px;
-   margin:135px auto;
+.span {
+  width: 1000px;
+  margin: 135px auto;
 }
 
 h1 {
@@ -22,18 +22,17 @@ h1 {
   letter-spacing: -0.5px;
 }
 
-h2{
-   font-family: Arial, sans-serif;
-   font-weight: 400;
-   font-size: 28px;
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
 }
 
-h3{
-   font-family: "Montserrat";
+h3 {
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 20px;
   letter-spacing: -0.5px;
-  
 }
 h4 {
   font-family: "Montserrat";
@@ -42,58 +41,56 @@ h4 {
   letter-spacing: -0.6px;
 }
 
-p{
-   line-height: 20px;
-   color:#8c8c8c;
+p {
+  line-height: 20px;
+  color: #8c8c8c;
 }
 
 nav {
   width: 1100px;
-  margin-left:268px;
+  margin-left: 268px;
   margin-top: 52px;
   margin-bottom: 52px;
 }
 
-#menu{
-   display: inline-block;
+#menu {
+  display: inline-block;
 }
 
 #hyperlinks {
   display: inline-block;
   list-style-type: none;
-  margin-left:800px;
+  margin-left: 800px;
 }
 
 .navItems {
-   display: inline-block;
+  display: inline-block;
   margin-right: 36px;
-
 }
-
 
 a {
   text-decoration: none;
   color: #c4c4c4;
 }
 
-a:hover{
-   color:black;
+a:hover {
+  color: black;
 }
 
 #imageContainer {
-filter: brightness(85%);
-height:720px;
-overflow: hidden;
+  filter: brightness(85%);
+  height: 720px;
+  overflow: hidden;
 }
 
-#imageContainer img{
-   width:100%;
-   height: auto;
+#imageContainer img {
+  width: 100%;
+  height: auto;
 }
 
 #signUpBox {
-   position:absolute;
-   z-index: 10;
+  position: absolute;
+  z-index: 10;
   float: left;
   margin-left: 268px;
   margin-top: 140px;
@@ -108,8 +105,8 @@ overflow: hidden;
   margin-bottom: 22px;
 }
 
-#getYourHands p{
-   color: #fadd17;
+#getYourHands p {
+  color: #fadd17;
 }
 
 form {
@@ -138,189 +135,210 @@ form input[type="button"] {
   align-self: flex-start;
 }
 
-#features{
-   color:#8c8c8c;
-   display: block;
-   width:1200px;
-   margin-left:268px;
+#features {
+  color: #8c8c8c;
+  display: block;
+  width: 1200px;
+  margin-left: 268px;
 }
 
-.amazingFeature{
-   display: inline-block;
-   width:320px;
-   margin-right:70px;
+.amazingFeature {
+  display: inline-block;
+  width: 320px;
+  margin-right: 70px;
 }
 
-.amazingFeatureName{
-   color:#000000;
-   margin-bottom: 15px;
+.amazingFeatureName {
+  color: #000000;
+  margin-bottom: 15px;
 }
 
-#slogan{
-   background-color: #f4f4f4;
-   text-align: center;
-   padding: 135px;
+#slogan {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 135px;
 }
 
-#slogan p{
-   margin-top: 10px;
+#slogan p {
+  margin-top: 10px;
 }
 
-#slogan b{
-   color: #000000;
+#slogan b {
+  color: #000000;
 }
 
-#affordable{
-   margin-top:20px;
-   margin-bottom:100px;
-   color:#8c8c8c;
+#affordable {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  color: #8c8c8c;
 }
 #subscription {
-   padding-left: 268px;
-   padding-right: 268px;
-   padding-top: 60px;
-   padding-bottom: 100px;
-   text-align: center;
-   position: relative;
-   overflow: hidden;
-   }
+  padding-left: 268px;
+  padding-right: 268px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
-#bgContainer{
-   position:absolute;
-   top:0;
-   left:0;
-   width:1600px;
-   height:1000px;
+
+#bgContainer {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   bottom: 0px;
+   width: 100%;
+   height: 100%;
    background-image: url(images/glasses.png);
    background-repeat: no-repeat;
-   background-size:1600px 1000px;
-   background-color:rgba(255, 255, 255, 0.63);
-   background-blend-mode:overlay;
+   background-size: contain;
+   background-color: rgba(255, 255, 255, 0.63);
+   background-blend-mode: overlay;
    background-attachment: fixed;
-   background-position:bottom;
    filter: grayscale(100%);
    z-index: -1;
+ }
+
+.content {
+  position: relative;
+  z-index: 1;
 }
 
-.content{
-   position: relative;
-   z-index: 1;
+#plans {
+  display: flex;
+  justify-content: space-between;
+}
+.plan {
+  display: inline-block;
+  background-color: #ffffff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 46%,
+      #f1f1f1 49%,
+      #f1f1f1 51%,
+      transparent 55%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 46%,
+      #f1f1f1 49%,
+      #f1f1f1 51%,
+      transparent 55%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 46%,
+      #f1f1f1 49%,
+      #f1f1f1 51%,
+      transparent 55%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 46%,
+      #f1f1f1 49%,
+      #f1f1f1 51%,
+      transparent 55%
+    );
+  background-size: 15px 15px;
+  background-color: white;
+  padding: 80px;
 }
 
-#plans{
-   display: block;
-   width:1200px;
+.planName {
+  padding-bottom: 30px;
 }
-.plan{
-   display: inline-block;
-   background-color: #ffffff;
-   background-image:
-      linear-gradient(90deg, transparent 46%, #f1f1f1 49%, #f1f1f1 51%, transparent 55%),
-      linear-gradient(0deg, transparent 46%, #f1f1f1 49%, #f1f1f1 51%, transparent 55%),
-      linear-gradient(-45deg, transparent 46%, #f1f1f1 49%, #f1f1f1 51%, transparent 55%),
-      linear-gradient(45deg, transparent 46%, #f1f1f1 49%, #f1f1f1 51%, transparent 55%);
-    background-size: 15px 15px;
-    background-color: white;
-    padding:90px;
-    margin-right:50px;
-    
-
-
-}
-.planName{
-   padding-bottom: 30px;
-}
-.plan p{
-   font-family: "Montserrat";
-   padding-bottom: 20px;
-   color: #8c8c8c;
+.plan p {
+  font-family: "Montserrat";
+  padding-bottom: 20px;
+  color: #8c8c8c;
 }
 
-#price{
-   margin-top:40px;
-   margin-bottom:20px;
+#price {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-.button{
-   background-color: #0c3c5e;
-   border: none;
-   border-radius: 1px;
-   padding:20px 30px;
-   color:white;
-   display:inline-block;
+.button {
+  background-color: #0c3c5e;
+  border: none;
+  border-radius: 1px;
+  padding: 20px 30px;
+  color: white;
+  display: inline-block;
 }
 
-.button h4{
-   font-size: 13px;
-   letter-spacing: 1.2px;
+.button h4 {
+  font-size: 13px;
+  letter-spacing: 1.2px;
 }
 
-#bestApp{
-   padding-left: 268px;
-   padding-right: 268px;
-   padding-top: 170px;
-   padding-bottom: 170px;
-   color:white;
-   text-align: center;
-   position: relative;
-   overflow: hidden;
-   background-color:rgba(12, 60, 94,0.7);
+#bestApp {
+  padding-left: 268px;
+  padding-right: 268px;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(12, 60, 94, 0.7);
 }
 
-#bgContainer1{
-   position:absolute;
-   top:0;
-   left:0;
-   width:1600px;
-   height:100%;
-   background-image: url(images/notebook.jpg);
-   background-repeat: no-repeat;
-   background-size:cover;
-   background-color:rgba(19, 97, 153, 0.9);
-   background-blend-mode:overlay;
-   background-position:center;
-   filter: grayscale(100%);
-   z-index: -1;
+#bgContainer1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1600px;
+  height: 100%;
+  background-image: url(images/notebook.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(19, 97, 153, 0.9);
+  background-blend-mode: overlay;
+  background-position: center;
+  filter: grayscale(100%);
+  z-index: -1;
 }
 
-#bestApp p{
-   margin-top: 10px;
-   color:white;
+#bestApp p {
+  margin-top: 10px;
+  color: white;
 }
 
-#bestApp h3{
-   font-size:25px;
+#bestApp h3 {
+  font-size: 25px;
 }
-#tryFree{
-   background-color: #fadd17;
-   color:#000000;
-   margin-top: 50px;
-}
-
-#socialMedia{
-   padding-top: 80px;
-   padding-bottom: 60px;
-   text-align: center;
-   color:white;
-   background-color: #1d2530;
+#tryFree {
+  background-color: #fadd17;
+  color: #000000;
+  margin-top: 50px;
 }
 
-#socialMedia p{
-   margin-top:10px;
-   font-family: "Montserrat";
+#socialMedia {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-align: center;
+  color: white;
+  background-color: #1d2530;
 }
 
-#icons{
-   display: block;
-   text-align: center;
-   margin-top: 30px;
+#socialMedia p {
+  margin-top: 10px;
+  font-family: "Montserrat";
 }
 
-.icon{
-   display: inline-block;
-   padding:15px;
+#icons {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.icon img{
-   width: 35px;
+.icon {
+  display: inline-block;
+  padding: 15px;
+}
+
+.icon img {
+  width: 35px;
 }
